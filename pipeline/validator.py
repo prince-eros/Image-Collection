@@ -86,7 +86,7 @@ class Validator:
             is_watermarked, wm_score = self.watermark_validator.is_watermarked(image)
 
             if is_watermarked:
-                logging.info(f"🚫 Watermark detected ({wm_score:.2f})")
+                logging.info(f"Watermark detected ({wm_score:.2f})")
                 self._move_to_rejected(image_path)
                 return None
 
@@ -99,7 +99,7 @@ class Validator:
             )
 
             if not is_relevant:
-                logging.info("🚫 Irrelevant image rejected")
+                logging.info("Irrelevant image rejected")
                 self._move_to_rejected(image_path)
                 return None
 
@@ -112,7 +112,7 @@ class Validator:
             is_blurry, blur_reason = self.blur_validator.is_blurry(blur_variance)
 
             if is_blurry:
-                logging.info("🚫 Blurry image rejected")
+                logging.info("Blurry image rejected")
                 self._move_to_rejected(image_path)
                 return None
 

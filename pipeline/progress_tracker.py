@@ -31,7 +31,7 @@ class ProgressTracker:
         self.target = target
         self.collected = 0
 
-        logging.info(f"🚀 Starting bucket: {bucket} | Target: {target}")
+        logging.info(f"Starting bucket: {bucket} | Target: {target}")
 
     # =========================
     # UPDATE PROGRESS

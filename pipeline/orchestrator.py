@@ -52,11 +52,11 @@ class Orchestrator:
 
         if self.resume:
            self.collected = previous
-           logging.info(f"♻️ Resuming from {previous}")
+           logging.info(f"Resuming from {previous}")
         else:
             self.collected = 0
 
-        logging.info(f"🎯 Target: {target_count} images")
+        logging.info(f"Target: {target_count} images")
 
         sources = self.source_manager.get_sources()
 
@@ -65,7 +65,7 @@ class Orchestrator:
                 break
 
             logging.info(
-                f"\n🔄 Source: {source.name} | Type: {source.source_type}"
+                f"\nSource: {source.name} | Type: {source.source_type}"
             )
 
             try:
@@ -74,7 +74,7 @@ class Orchestrator:
                 logging.error(f"Source failed: {source.name} | {e}")
                 continue
 
-        logging.info(f"✅ Completed bucket: {bucket_name} ({self.collected}/{self.target})")
+        logging.info(f"Completed bucket: {bucket_name} ({self.collected}/{self.target})")
         self.progress_tracker.finish()
         self.stats_manager.save()
     # =========================
@@ -101,7 +101,7 @@ class Orchestrator:
            self._process_batch(batch, source)
 
     def _process_batch(self, batch, source):
-        results = self.concurrency.run(
+        results = self.concurrency_manager.run(
             self.downloader.download,
             batch
         )
@@ -109,7 +109,8 @@ class Orchestrator:
         for image_path, image_data in results:
             try:
                 self._process_pipeline(image_path, image_data, source)
-            except Exception:
+            except Exception as e:
+                 logging.error(f"Pipeline processing failed: {e}")
                  continue
 
     # =========================
@@ -132,6 +133,9 @@ class Orchestrator:
            return
 
         sorted_path = self.sorter.sort(clean_path, self.bucket)
+
+        if not sorted_path:
+           return
 
         # get resolution
         width, height = image_data.get("width", 0), image_data.get("height", 0)
@@ -161,9 +165,6 @@ class Orchestrator:
         )
 
         self.log_manager.log(entry)
-
-        if not sorted_path:
-           return
 
         self.metadata_writer.write(sorted_path, image_data)
         self.state_manager.add_seen_url(self.bucket, image_data.get("url", ""))
@@ -205,4 +206,7 @@ class Orchestrator:
     # =========================
 
     def shutdown(self):
-        logging.info("🛑 Shutting down pipeline")
+        logging.info("Shutting down pipeline")
+
+    def save_state(self):
+        self.state_manager._save()

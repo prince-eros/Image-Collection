@@ -1,0 +1,258 @@
+2026-03-26 13:00:13,235 | INFO | Arguments: Namespace(bucket='architecture', all=False, count=10, count_per_bucket=None, workers=4, delay=1.0, log_level='INFO', resume=False)
+2026-03-26 13:06:46,138 | INFO | Arguments: Namespace(bucket='architecture', all=False, count=10, count_per_bucket=None, workers=4, delay=1.0, log_level='INFO', resume=False)
+2026-03-26 13:15:45,646 | INFO | Arguments: Namespace(bucket='architecture', all=False, count=10, count_per_bucket=None, workers=4, delay=1.0, log_level='INFO', resume=False)
+2026-03-26 13:15:48,139 | WARNING | wmdetection not found, attempting clone...
+2026-03-26 13:17:55,593 | INFO | Arguments: Namespace(bucket='architecture', all=False, count=10, count_per_bucket=None, workers=4, delay=1.0, log_level='INFO', resume=False)
+2026-03-26 13:17:59,113 | INFO | [Watermark] Loading model on cpu
+2026-03-26 13:17:59,798 | INFO | HTTP Request: HEAD https://huggingface.co/boomb0om/watermark-detectors/resolve/main/convnext-tiny_watermarks_detector.pth "HTTP/1.1 302 Found"
+2026-03-26 13:18:01,119 | INFO | HTTP Request: GET https://huggingface.co/api/models/boomb0om/watermark-detectors/xet-read-token/bd472165157f6d14ddcd3b24846ffd828e8fee8c "HTTP/1.1 200 OK"
+2026-03-26 13:23:03,096 | INFO | Arguments: Namespace(bucket='architecture', all=False, count=10, count_per_bucket=None, workers=4, delay=1.0, log_level='INFO', resume=False)
+2026-03-26 13:23:06,403 | INFO | [Watermark] Loading model on cpu
+2026-03-26 13:23:07,165 | INFO | HTTP Request: HEAD https://huggingface.co/boomb0om/watermark-detectors/resolve/main/convnext-tiny_watermarks_detector.pth "HTTP/1.1 302 Found"
+2026-03-26 13:23:07,287 | INFO | Processing bucket: architecture
+2026-03-26 13:23:07,289 | INFO | Starting bucket: architecture | Target: 10
+2026-03-26 13:23:07,289 | INFO | Target: 10 images
+2026-03-26 14:29:41,915 | INFO | Arguments: Namespace(bucket='architecture', all=False, count=10, count_per_bucket=None, workers=4, delay=1.0, log_level='INFO', resume=False)
+2026-03-26 14:29:44,983 | INFO | [Watermark] Loading model on cpu
+2026-03-26 14:29:45,609 | INFO | HTTP Request: HEAD https://huggingface.co/boomb0om/watermark-detectors/resolve/main/convnext-tiny_watermarks_detector.pth "HTTP/1.1 302 Found"
+2026-03-26 14:29:45,686 | INFO | Processing bucket: architecture
+2026-03-26 14:29:45,690 | INFO | Starting bucket: architecture | Target: 10
+2026-03-26 14:29:45,690 | INFO | Target: 10 images
+2026-03-26 14:29:45,707 | INFO | 
+Source: pexels | Type: api
+2026-03-26 14:29:51,300 | INFO | Blurry image rejected
+2026-03-26 14:29:56,253 | INFO | 
+Source: pixabay | Type: api
+2026-03-26 14:30:02,885 | INFO | 
+Source: wikimedia | Type: api
+2026-03-26 14:30:02,894 | INFO | Wikimedia category: Hindu_temples_in_India
+2026-03-26 14:30:05,070 | INFO | Wikimedia category: Forts_in_India
+2026-03-26 14:30:07,953 | INFO | Wikimedia category: Monuments_of_India
+2026-03-26 14:30:08,399 | INFO | Completed bucket: architecture (0/10)
+2026-03-26 14:53:58,091 | INFO |  Starting Image Scraping Pipeline
+2026-03-26 14:53:58,091 | INFO | Arguments: Namespace(bucket='architecture', all=False, count=10, count_per_bucket=None, workers=4, delay=1.0, log_level='INFO', resume=False)
+2026-03-26 14:54:01,472 | INFO | [Watermark] Loading model on cpu
+2026-03-26 14:54:02,137 | INFO | HTTP Request: HEAD https://huggingface.co/boomb0om/watermark-detectors/resolve/main/convnext-tiny_watermarks_detector.pth "HTTP/1.1 302 Found"
+2026-03-26 14:54:02,236 | INFO | Processing bucket: architecture
+2026-03-26 14:54:02,236 | INFO | Starting bucket: architecture | Target: 10
+2026-03-26 14:54:02,236 | INFO | Target: 10 images
+2026-03-26 14:54:02,239 | INFO | 
+Source: pexels | Type: api
+2026-03-26 14:54:03,656 | INFO | Watermark detected (0.64)
+2026-03-26 14:54:04,037 | INFO | Blurry image rejected
+2026-03-26 14:54:04,441 | INFO | Watermark detected (0.93)
+2026-03-26 14:54:04,670 | INFO | Watermark detected (0.92)
+2026-03-26 14:54:06,154 | INFO | Watermark detected (0.74)
+2026-03-26 14:54:06,455 | INFO | Watermark detected (0.52)
+2026-03-26 14:54:06,737 | INFO | Watermark detected (0.93)
+2026-03-26 14:54:06,962 | INFO | Watermark detected (0.83)
+2026-03-26 14:54:08,169 | INFO | Duplicate image rejected
+2026-03-26 14:54:08,449 | INFO | Watermark detected (0.93)
+2026-03-26 14:54:08,452 | INFO | 
+Source: pixabay | Type: api
+2026-03-26 14:54:12,486 | INFO | 
+Source: wikimedia | Type: api
+2026-03-26 14:54:12,486 | INFO | Wikimedia category: Hindu_temples_in_India
+2026-03-26 14:54:13,503 | INFO | Wikimedia category: Forts_in_India
+2026-03-26 14:54:14,502 | INFO | Wikimedia category: Monuments_of_India
+2026-03-26 14:54:14,994 | INFO | Completed bucket: architecture (0/10)
+2026-03-26 14:54:15,002 | INFO | Total time: 16.91 seconds
+2026-03-26 14:54:15,002 | INFO | Pipeline finished
+2026-03-26 15:29:18,074 | INFO |  Starting Image Scraping Pipeline
+2026-03-26 15:29:18,074 | INFO | Arguments: Namespace(bucket='landscape_nature', all=False, count=10, count_per_bucket=None, workers=4, delay=1.0, log_level='INFO', resume=False)
+2026-03-26 15:29:20,910 | INFO | [Watermark] Loading model on cpu
+2026-03-26 15:29:20,910 | INFO | [Watermark] Using local weights: D:\taskA_v2\.model_cache\watermark-detection\convnext-tiny_watermarks_detector.pth
+2026-03-26 15:29:21,312 | INFO | Processing bucket: landscape_nature
+2026-03-26 15:29:21,312 | INFO | Starting bucket: landscape_nature | Target: 10
+2026-03-26 15:29:21,312 | INFO | Target: 10 images
+2026-03-26 15:29:21,319 | ERROR | Fatal error: No module named 'icrawler'
+Traceback (most recent call last):
+  File "D:\taskA_v2\scrape.py", line 204, in main
+    orchestrator.run_bucket(
+  File "D:\taskA_v2\pipeline\orchestrator.py", line 61, in run_bucket
+    sources = self.source_manager.get_sources()
+  File "D:\taskA_v2\pipeline\source_manager.py", line 130, in get_sources
+    from sources.bing_source import BingSource
+  File "D:\taskA_v2\sources\bing_source.py", line 5, in <module>
+    from icrawler.builtin import BingImageCrawler
+ModuleNotFoundError: No module named 'icrawler'
+2026-03-26 15:29:21,319 | INFO | Total time: 3.24 seconds
+2026-03-26 15:29:21,319 | INFO | Pipeline finished
+2026-03-26 15:36:46,784 | INFO |  Starting Image Scraping Pipeline
+2026-03-26 15:36:46,784 | INFO | Arguments: Namespace(bucket='landscape_nature', all=False, count=10, count_per_bucket=None, workers=4, delay=1.0, log_level='INFO', resume=False)
+2026-03-26 15:36:49,478 | INFO | [Watermark] Loading model on cpu
+2026-03-26 15:36:49,478 | INFO | [Watermark] Using local weights: D:\taskA_v2\.model_cache\watermark-detection\convnext-tiny_watermarks_detector.pth
+2026-03-26 15:36:49,837 | INFO | Processing bucket: landscape_nature
+2026-03-26 15:36:49,837 | INFO | Starting bucket: landscape_nature | Target: 10
+2026-03-26 15:36:49,837 | INFO | Target: 10 images
+2026-03-26 15:36:50,066 | INFO | 
+Source: pexels | Type: api
+2026-03-26 15:36:53,763 | INFO | Blurry image rejected
+2026-03-26 15:36:54,250 | INFO | Blurry image rejected
+2026-03-26 15:36:57,147 | INFO | Blurry image rejected
+2026-03-26 15:36:58,041 | INFO | Blurry image rejected
+2026-03-26 15:36:58,370 | INFO | Blurry image rejected
+2026-03-26 15:37:01,238 | INFO | 
+Source: pixabay | Type: api
+2026-03-26 15:37:05,684 | INFO | 
+Source: europeana | Type: api
+2026-03-26 15:37:10,851 | INFO | 
+Source: internet_archive | Type: api
+2026-03-26 15:37:20,258 | INFO | 
+Source: nypl | Type: api
+2026-03-26 15:37:21,939 | WARNING | NYPL API error: 410
+2026-03-26 15:37:22,611 | WARNING | NYPL API error: 410
+2026-03-26 15:37:23,276 | WARNING | NYPL API error: 410
+2026-03-26 15:37:23,970 | WARNING | NYPL API error: 410
+2026-03-26 15:37:24,664 | WARNING | NYPL API error: 410
+2026-03-26 15:37:25,362 | WARNING | NYPL API error: 410
+2026-03-26 15:37:26,061 | WARNING | NYPL API error: 410
+2026-03-26 15:37:26,729 | WARNING | NYPL API error: 410
+2026-03-26 15:37:27,386 | WARNING | NYPL API error: 410
+2026-03-26 15:37:27,392 | INFO | 
+Source: smithsonian | Type: api
+2026-03-26 15:37:45,144 | INFO | Irrelevant image rejected
+2026-03-26 15:37:45,275 | INFO | Watermark detected (0.92)
+2026-03-26 15:37:45,412 | INFO | Watermark detected (0.53)
+2026-03-26 15:37:45,539 | INFO | Watermark detected (0.78)
+2026-03-26 15:37:52,708 | INFO | Watermark detected (0.87)
+2026-03-26 15:37:52,832 | INFO | Watermark detected (0.97)
+2026-03-26 15:37:52,961 | INFO | Watermark detected (0.93)
+2026-03-26 15:37:53,118 | INFO | Irrelevant image rejected
+2026-03-26 15:38:00,992 | INFO | Watermark detected (0.53)
+2026-03-26 15:38:01,104 | INFO | Watermark detected (0.58)
+2026-03-26 15:38:01,104 | INFO | 
+Source: bing | Type: scraper
+2026-03-26 15:38:01,104 | INFO | Bing scraping: Himalaya mountains India snow landscape
+2026-03-26 15:38:01,104 | INFO | start crawling...
+2026-03-26 15:38:01,104 | INFO | starting 1 feeder threads...
+2026-03-26 15:38:01,104 | INFO | thread feeder-001 exit
+2026-03-26 15:38:01,104 | INFO | starting 1 parser threads...
+2026-03-26 15:38:01,104 | INFO | starting 1 downloader threads...
+2026-03-26 15:38:01,631 | INFO | parsing result page https://www.bing.com/images/async?q=Himalaya mountains India snow landscape&first=0&qft=+filterui:license-L2_L3
+2026-03-26 15:38:06,955 | INFO | image #1	http://www.photoeverywhere.co.uk/west/winterholiday/mountains_snow2000.jpg
+2026-03-26 15:38:07,729 | INFO | downloaded images reach max num, thread downloader-001 is ready to exit
+2026-03-26 15:38:07,729 | INFO | thread downloader-001 exit
+2026-03-26 15:38:08,137 | INFO | Crawling task done!
+2026-03-26 15:38:08,138 | INFO | Bing scraping: Kerala backwaters boat scenic view
+2026-03-26 15:38:08,138 | INFO | start crawling...
+2026-03-26 15:38:08,138 | INFO | starting 1 feeder threads...
+2026-03-26 15:38:08,138 | INFO | thread feeder-001 exit
+2026-03-26 15:38:08,138 | INFO | starting 1 parser threads...
+2026-03-26 15:38:08,138 | INFO | starting 1 downloader threads...
+2026-03-26 15:38:08,568 | INFO | parsing result page https://www.bing.com/images/async?q=Kerala backwaters boat scenic view&first=0&qft=+filterui:license-L2_L3
+2026-03-26 15:38:08,583 | INFO | skip downloading file 000001.jpg
+2026-03-26 15:38:08,680 | INFO | downloaded image reached max num, thread parser-001 is ready to exit
+2026-03-26 15:38:08,680 | INFO | thread parser-001 exit
+2026-03-26 15:38:08,710 | INFO | downloaded images reach max num, thread downloader-001 is ready to exit
+2026-03-26 15:38:08,710 | INFO | thread downloader-001 exit
+2026-03-26 15:38:09,153 | INFO | Crawling task done!
+2026-03-26 15:38:09,153 | INFO | Bing scraping: Thar desert dunes Rajasthan
+2026-03-26 15:38:09,155 | INFO | start crawling...
+2026-03-26 15:38:09,155 | INFO | starting 1 feeder threads...
+2026-03-26 15:38:09,155 | INFO | thread feeder-001 exit
+2026-03-26 15:38:09,155 | INFO | starting 1 parser threads...
+2026-03-26 15:38:09,155 | INFO | starting 1 downloader threads...
+2026-03-26 15:38:09,552 | INFO | parsing result page https://www.bing.com/images/async?q=Thar desert dunes Rajasthan&first=0&qft=+filterui:license-L2_L3
+2026-03-26 15:38:09,573 | INFO | skip downloading file 000001.jpg
+2026-03-26 15:38:09,590 | INFO | downloaded image reached max num, thread parser-001 is ready to exit
+2026-03-26 15:38:09,590 | INFO | thread parser-001 exit
+2026-03-26 15:38:10,070 | INFO | downloaded images reach max num, thread downloader-001 is ready to exit
+2026-03-26 15:38:10,070 | INFO | thread downloader-001 exit
+2026-03-26 15:38:10,168 | INFO | Crawling task done!
+2026-03-26 15:38:10,168 | INFO | Bing scraping: Indian forest jungle greenery
+2026-03-26 15:38:10,168 | INFO | start crawling...
+2026-03-26 15:38:10,168 | INFO | starting 1 feeder threads...
+2026-03-26 15:38:10,168 | INFO | thread feeder-001 exit
+2026-03-26 15:38:10,168 | INFO | starting 1 parser threads...
+2026-03-26 15:38:10,168 | INFO | starting 1 downloader threads...
+2026-03-26 15:38:10,549 | INFO | parsing result page https://www.bing.com/images/async?q=Indian forest jungle greenery&first=0&qft=+filterui:license-L2_L3
+2026-03-26 15:38:10,565 | INFO | skip downloading file 000001.jpg
+2026-03-26 15:38:10,581 | INFO | downloaded image reached max num, thread parser-001 is ready to exit
+2026-03-26 15:38:10,581 | INFO | thread parser-001 exit
+2026-03-26 15:38:11,352 | INFO | downloaded images reach max num, thread downloader-001 is ready to exit
+2026-03-26 15:38:11,352 | INFO | thread downloader-001 exit
+2026-03-26 15:38:12,176 | INFO | Crawling task done!
+2026-03-26 15:38:12,374 | INFO | Bing scraping: tea plantation hills India
+2026-03-26 15:38:12,374 | INFO | start crawling...
+2026-03-26 15:38:12,374 | INFO | starting 1 feeder threads...
+2026-03-26 15:38:12,374 | INFO | thread feeder-001 exit
+2026-03-26 15:38:12,374 | INFO | starting 1 parser threads...
+2026-03-26 15:38:12,374 | INFO | starting 1 downloader threads...
+2026-03-26 15:38:12,596 | INFO | downloaded image reached max num, thread parser-001 is ready to exit
+2026-03-26 15:38:12,596 | INFO | thread parser-001 exit
+2026-03-26 15:38:12,801 | INFO | parsing result page https://www.bing.com/images/async?q=tea plantation hills India&first=0&qft=+filterui:license-L2_L3
+2026-03-26 15:38:13,892 | INFO | image #1	https://1.bp.blogspot.com/-7b3g3hX2QNY/UWbnQkx2lII/AAAAAAAAKWw/u3NHU8gTtdU/s1600/Boh+Tea+Plantation%252C+Habu%252C+Cameron+Highlands+2.jpg
+2026-03-26 15:38:14,573 | INFO | downloaded images reach max num, thread downloader-001 is ready to exit
+2026-03-26 15:38:14,573 | INFO | thread downloader-001 exit
+2026-03-26 15:38:14,838 | INFO | downloaded image reached max num, thread parser-001 is ready to exit
+2026-03-26 15:38:14,838 | INFO | thread parser-001 exit
+2026-03-26 15:38:15,396 | INFO | Crawling task done!
+2026-03-26 15:38:15,396 | INFO | Bing scraping: river Ganga sunrise landscape
+2026-03-26 15:38:15,396 | INFO | start crawling...
+2026-03-26 15:38:15,396 | INFO | starting 1 feeder threads...
+2026-03-26 15:38:15,396 | INFO | thread feeder-001 exit
+2026-03-26 15:38:15,396 | INFO | starting 1 parser threads...
+2026-03-26 15:38:15,403 | INFO | starting 1 downloader threads...
+2026-03-26 15:38:15,818 | INFO | parsing result page https://www.bing.com/images/async?q=river Ganga sunrise landscape&first=0&qft=+filterui:license-L2_L3
+2026-03-26 15:38:15,835 | INFO | skip downloading file 000001.jpg
+2026-03-26 15:38:16,098 | INFO | downloaded images reach max num, thread downloader-001 is ready to exit
+2026-03-26 15:38:16,114 | INFO | thread downloader-001 exit
+2026-03-26 15:38:16,407 | INFO | Crawling task done!
+2026-03-26 15:38:16,407 | INFO | Bing scraping: waterfall India nature scenic
+2026-03-26 15:38:16,407 | INFO | start crawling...
+2026-03-26 15:38:16,407 | INFO | starting 1 feeder threads...
+2026-03-26 15:38:16,407 | INFO | thread feeder-001 exit
+2026-03-26 15:38:16,407 | INFO | starting 1 parser threads...
+2026-03-26 15:38:16,407 | INFO | starting 1 downloader threads...
+2026-03-26 15:38:16,831 | INFO | parsing result page https://www.bing.com/images/async?q=waterfall India nature scenic&first=0&qft=+filterui:license-L2_L3
+2026-03-26 15:38:16,847 | INFO | downloaded image reached max num, thread parser-001 is ready to exit
+2026-03-26 15:38:16,847 | INFO | thread parser-001 exit
+2026-03-26 15:38:16,859 | INFO | skip downloading file 000001.jpg
+2026-03-26 15:38:17,590 | INFO | downloaded images reach max num, thread downloader-001 is ready to exit
+2026-03-26 15:38:17,590 | INFO | thread downloader-001 exit
+2026-03-26 15:38:18,420 | INFO | Crawling task done!
+2026-03-26 15:38:18,422 | INFO | Bing scraping: coastal beach India sunset
+2026-03-26 15:38:18,422 | INFO | start crawling...
+2026-03-26 15:38:18,422 | INFO | starting 1 feeder threads...
+2026-03-26 15:38:18,422 | INFO | thread feeder-001 exit
+2026-03-26 15:38:18,422 | INFO | starting 1 parser threads...
+2026-03-26 15:38:18,422 | INFO | starting 1 downloader threads...
+2026-03-26 15:38:18,795 | INFO | parsing result page https://www.bing.com/images/async?q=coastal beach India sunset&first=0&qft=+filterui:license-L2_L3
+2026-03-26 15:38:18,819 | INFO | skip downloading file 000001.jpg
+2026-03-26 15:38:18,883 | INFO | downloaded image reached max num, thread parser-001 is ready to exit
+2026-03-26 15:38:18,884 | INFO | thread parser-001 exit
+2026-03-26 15:38:18,967 | INFO | downloaded images reach max num, thread downloader-001 is ready to exit
+2026-03-26 15:38:18,967 | INFO | thread downloader-001 exit
+2026-03-26 15:38:19,422 | INFO | Crawling task done!
+2026-03-26 15:38:19,521 | INFO | Bing scraping: monsoon rain landscape India
+2026-03-26 15:38:19,521 | INFO | start crawling...
+2026-03-26 15:38:19,521 | INFO | starting 1 feeder threads...
+2026-03-26 15:38:19,521 | INFO | thread feeder-001 exit
+2026-03-26 15:38:19,521 | INFO | starting 1 parser threads...
+2026-03-26 15:38:19,521 | INFO | starting 1 downloader threads...
+2026-03-26 15:38:19,825 | INFO | downloaded image reached max num, thread parser-001 is ready to exit
+2026-03-26 15:38:19,825 | INFO | thread parser-001 exit
+2026-03-26 15:38:19,934 | INFO | parsing result page https://www.bing.com/images/async?q=monsoon rain landscape India&first=0&qft=+filterui:license-L2_L3
+2026-03-26 15:38:20,410 | ERROR | Response status code 429, file https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Monsoon_clouds_near_Nagercoil.jpg
+2026-03-26 15:38:20,562 | ERROR | Response status code 429, file https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/(1)_Agriculture_and_rural_farms_of_India.jpg
+2026-03-26 15:38:20,722 | ERROR | Response status code 429, file https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Monsoon_Rain.jpg
+2026-03-26 15:38:20,875 | ERROR | Response status code 429, file https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/JMA_TD_Jun_16_2012.jpg
+2026-03-26 15:38:21,028 | ERROR | Response status code 429, file https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Mansoon_clouds.jpg
+2026-03-26 15:38:21,176 | ERROR | Response status code 429, file https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eravikulam_and_Clouds.jpg
+2026-03-26 15:38:21,347 | ERROR | Response status code 429, file https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kumarakom_Road_during_Monsoon.jpg
+2026-03-26 15:38:21,507 | ERROR | Response status code 429, file https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Farmer_monsoon_cap.jpg
+2026-03-26 15:38:21,667 | ERROR | Response status code 429, file https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Monsoon_cloud.jpg
+2026-03-26 15:38:21,832 | ERROR | Response status code 429, file https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Monsoon_trough_over_eastern_Asia_May_17_2012.jpg
+2026-03-26 15:38:23,432 | INFO | image #1	https://www.thephysicalenvironment.com/Book/climate_systems/mangalore.jpg
+2026-03-26 15:38:23,592 | INFO | downloaded images reach max num, thread downloader-001 is ready to exit
+2026-03-26 15:38:23,592 | INFO | thread downloader-001 exit
+2026-03-26 15:38:23,858 | INFO | downloaded image reached max num, thread parser-001 is ready to exit
+2026-03-26 15:38:23,858 | INFO | thread parser-001 exit
+2026-03-26 15:38:24,567 | INFO | Crawling task done!
+2026-03-26 15:38:24,671 | INFO | 
+Source: wikimedia | Type: api
+2026-03-26 15:38:24,671 | INFO | Wikimedia category: Culture_of_India
+2026-03-26 15:38:25,149 | INFO | Completed bucket: landscape_nature (0/10)
+2026-03-26 15:38:25,149 | INFO | Total time: 98.36 seconds
+2026-03-26 15:38:25,149 | INFO | Pipeline finished

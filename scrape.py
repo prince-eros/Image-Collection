@@ -185,7 +185,7 @@ def main():
 
     setup_logging(args.log_level)
 
-    logging.info("🚀 Starting Image Scraping Pipeline")
+    logging.info(" Starting Image Scraping Pipeline")
     logging.info(f"Arguments: {args}")
 
     start_time = time.time()
@@ -218,19 +218,19 @@ def main():
                 )
 
     except KeyboardInterrupt:
-        logging.warning("⚠️ Interrupted by user. Saving progress...")
+        logging.warning("Interrupted by user. Saving progress...")
         orchestrator.save_state()
 
     except Exception as e:
-        logging.exception(f"❌ Fatal error: {e}")
+        logging.exception(f"Fatal error: {e}")
         if 'orchestrator' in locals():
             orchestrator.save_state()
         sys.exit(1)
 
     finally:
         elapsed = time.time() - start_time
-        logging.info(f"⏱ Total time: {elapsed:.2f} seconds")
-        logging.info("✅ Pipeline finished")
+        logging.info(f"Total time: {elapsed:.2f} seconds")
+        logging.info("Pipeline finished")
 
 checker = ConsistencyChecker()
 checker.run()

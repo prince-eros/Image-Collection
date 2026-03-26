@@ -9,7 +9,7 @@ from typing import Dict, Optional
 from utils.rate_limiter import RateLimiter
 
 
-class Downloader:
+class SourceManager:
     """
     Handles:
     - API downloads (URL-based)
@@ -113,3 +113,67 @@ class Downloader:
             if ext in ["jpg", "jpeg", "png", "webp"]:
                 return ext
         return "jpg"
+    
+
+    def get_sources(self):
+        """
+        Return all available sources in priority order
+        """
+
+        from sources.pexels_source import PexelsSource
+        from sources.pixabay_source import PixabaySource
+        from sources.unsplash_source import UnsplashSource
+        from sources.europeana_source import EuropeanaSource
+        from sources.internetarchive_source import InternetArchiveSource
+        from sources.nypl_source import NYPLSource
+        from sources.smithsonian_source import SmithsonianSource
+        from sources.bing_source import BingSource
+        from sources.wikimedia_source import WikimediaSource
+
+        sources = []
+
+        # API sources first
+        try:
+            sources.append(PexelsSource())
+        except Exception:
+            pass
+
+        try:
+            sources.append(PixabaySource())
+        except Exception:
+            pass
+
+        try:
+            sources.append(UnsplashSource())
+        except Exception:
+            pass
+        
+        try:
+            sources.append(EuropeanaSource())
+        except Exception:
+            pass
+
+        try:
+            sources.append(InternetArchiveSource())
+        except Exception:
+            pass
+
+        try:
+            sources.append(NYPLSource())
+        except Exception:
+            pass
+
+        try:
+            sources.append(SmithsonianSource())
+        except Exception:
+            pass
+
+        try:
+            sources.append(BingSource())
+        except Exception:
+            pass
+
+        # fallback (no API key)
+        sources.append(WikimediaSource())
+
+        return sources

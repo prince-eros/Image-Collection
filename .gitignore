@@ -29,7 +29,8 @@ env/
 .DS_Store
 Thumbs.db
 
-
+.vendor/
+.model_cache/
 
 # Dataset (not pushing for now)
 data/

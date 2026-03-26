@@ -11,7 +11,7 @@ class ConsistencyChecker:
     # =========================
 
     def run(self):
-        print("\n🔍 Running Dataset Consistency Check...\n")
+        print("\nRunning Dataset Consistency Check...\n")
 
         for bucket in os.listdir(self.base_path):
             bucket_path = os.path.join(self.base_path, bucket)
@@ -21,20 +21,20 @@ class ConsistencyChecker:
 
             self._check_bucket(bucket, bucket_path)
 
-        print("\n✅ Consistency Check Completed\n")
+        print("\nConsistency Check Completed\n")
 
     # =========================
     # BUCKET CHECK
     # =========================
 
     def _check_bucket(self, bucket, bucket_path):
-        print(f"\n📂 Bucket: {bucket}")
+        print(f"\nBucket: {bucket}")
 
         for resolution in ["256", "512", "1024", "2048"]:
             res_path = os.path.join(bucket_path, resolution)
 
             if not os.path.exists(res_path):
-                print(f"⚠️ Missing folder: {resolution}")
+                print(f"Missing folder: {resolution}")
                 continue
 
             files = os.listdir(res_path)
@@ -56,7 +56,7 @@ class ConsistencyChecker:
             txt_path = os.path.join(path, txt_file)
 
             if not os.path.exists(txt_path):
-                print(f"❌ Missing TXT for {img}")
+                print(f"Missing TXT for {img}")
 
     # =========================
     # CHECK CORRUPTED IMAGES
@@ -70,4 +70,4 @@ class ConsistencyChecker:
                 with Image.open(img_path) as im:
                     im.verify()
             except Exception:
-                print(f"❌ Corrupted image: {img}")
+                print(f"Corrupted image: {img}")
