@@ -1,0 +1,15 @@
+# Core HTTP
+requests==2.32.3
+
+# Image processing
+Pillow==10.4.0
+numpy==1.26.4
+
+# ML / Watermark detection
+torch>=2.2.0
+torchvision>=0.17.0
+
+# Environment handling
+python-dotenv==1.0.1
+
+
